@@ -13,7 +13,7 @@ for i in range(len(enginedata)):
     if num.isdigit():
         numindexes.append(i)
 
-    if num.isdigit() and not enginedata[i + 1].isdigit():
+    if (i + 1 < len(enginedata) and not enginedata[i + 1].isdigit()) or (i == len(enginedata) - 1):
         for number in numindexes:
             for index in indexes:
                 if 0 <= number + index < len(enginedata) and enginedata[number + index] in symbols and numindexes:
