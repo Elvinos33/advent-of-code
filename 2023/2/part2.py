@@ -1,7 +1,5 @@
 cubedata = open("data.txt").readlines()
 
-thresholds = {"red": 12, "green": 13, "blue": 14}
-
 cubePowerSum = 0
 
 for game in cubedata:
